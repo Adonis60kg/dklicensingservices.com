@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact | DK Licensing Services</title>
+	<meta name="description" content="Contact DK Licensing Services for Miami-Dade permitting and licensing support." />
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="./index.html">
+				<div class="brand-mark">DK</div>
+				<div class="brand-text">
+					<div class="brand-name">DK Licensing Services</div>
+					<div class="brand-tagline">Permitting • MVR</div>
+				</div>
+			</a>
+
+			<nav class="nav" aria-label="Primary navigation">
+				<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+					Menu
+				</button>
+				<div id="nav-menu" class="nav-menu">
+					<a class="nav-link" href="./index.html">Home</a>
+					<a class="nav-link" href="./services.html">Services</a>
+					<a class="nav-link" href="./about.html">About</a>
+					<a class="nav-link active" href="./contact.html">Contact</a>
+					<a class="btn btn-primary" href="./contact.html">Request a Quote</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="section">
+		<div class="container">
+			<h1>Contact</h1>
+			<p class="lead">Send a request and we’ll reply with next steps and a quote.</p>
+
+			<div class="grid-2">
+				<section class="card">
+					<h2>Request Form (basic)</h2>
+					<form id="contactForm" class="form" autocomplete="on">
+						<label>
+							Full Name
+							<input name="name" type="text" required placeholder="Your name" />
+						</label>
+
+						<label>
+							Email
+							<input name="email" type="email" required placeholder="you@company.com" />
+						</label>
+
+						<label>
+							Phone (optional)
+							<input name="phone" type="tel" placeholder="(305) 555-1234" />
+						</label>
+
+						<label>
+							Service Needed
+							<select name="service" required>
+								<option value="">Select one…</option>
+								<option>MVR Permitting Support</option>
+								<option>Business Licensing Assistance</option>
+								<option>Document Preparation</option>
+								<option>Compliance Guidance</option>
+								<option>Other</option>
+							</select>
+						</label>
+
+						<label>
+							Message
+							<textarea name="message" rows="6" required placeholder="Tell us what you're trying to do, your business type, and timeline."></textarea>
+						</label>
+
+						<button class="btn btn-primary" type="submit">Send Request</button>
+						<p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+						<p class="fineprint muted">
+							This basic site does not send emails yet. Next step: connect a form service (Formspree) or backend.
+						</p>
+					</form>
+				</section>
+
+				<section class="card">
+					<h2>Business Info</h2>
+					<div class="info-list">
+						<div class="info-item">
+							<div class="info-label">Service Area</div>
+							<div class="info-value">Miami-Dade County</div>
+						</div>
+						<div class="info-item">
+							<div class="info-label">Email</div>
+							<div class="info-value">info@dklicensingservices.com</div>
+						</div>
+						<div class="info-item">
+							<div class="info-label">Phone</div>
+							<div class="info-value">(305) 000-0000</div>
+						</div>
+						<div class="info-item">
+							<div class="info-label">Hours</div>
+							<div class="info-value">By appointment</div>
+						</div>
+					</div>
+
+					<div class="note">
+						<strong>Next upgrade:</strong> We’ll replace the placeholder email/phone and wire this form to send real submissions.
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div class="muted">© <span id="year"></span> DK Licensing Services</div>
+			<div class="footer-links">
+				<a href="./index.html">Home</a>
+				<a href="./services.html">Services</a>
+				<a href="./about.html">About</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
